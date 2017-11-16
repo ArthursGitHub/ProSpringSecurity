@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>pss04_00_1</groupId>
-    <artifactId>pss04_00_1</artifactId>
+    <groupId>pss04_00_2</groupId>
+    <artifactId>pss04_00_2</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
@@ -123,36 +123,6 @@
             <version>${org.springframework.version}</version>
             <scope>test</scope>
         </dependency>
-
-
-
-
-        <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpcore</artifactId>
-            <version>${httpcore.version}</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>commons-logging</artifactId>
-                    <groupId>commons-logging</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
-            <version>${httpclient.version}</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>commons-logging</artifactId>
-                    <groupId>commons-logging</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
-
-
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-test</artifactId>
@@ -197,44 +167,44 @@
 
 
     <!--<build>-->
-    <!--<finalName>spring-security-mvc-login</finalName>-->
-    <!--<resources>-->
-    <!--<resource>-->
-    <!--<directory>src/main/resources</directory>-->
-    <!--<filtering>true</filtering>-->
-    <!--</resource>-->
-    <!--</resources>-->
+        <!--<finalName>spring-security-mvc-login</finalName>-->
+        <!--<resources>-->
+            <!--<resource>-->
+                <!--<directory>src/main/resources</directory>-->
+                <!--<filtering>true</filtering>-->
+            <!--</resource>-->
+        <!--</resources>-->
 
-    <!--<plugins>-->
+        <!--<plugins>-->
 
-    <!--<plugin>-->
-    <!--<groupId>org.apache.maven.plugins</groupId>-->
-    <!--<artifactId>maven-war-plugin</artifactId>-->
-    <!--<version>${maven-war-plugin.version}</version>-->
-    <!--</plugin>-->
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-war-plugin</artifactId>-->
+                <!--<version>${maven-war-plugin.version}</version>-->
+            <!--</plugin>-->
 
-    <!--<plugin>-->
-    <!--<groupId>org.codehaus.cargo</groupId>-->
-    <!--<artifactId>cargo-maven2-plugin</artifactId>-->
-    <!--<version>${cargo-maven2-plugin.version}</version>-->
-    <!--<configuration>-->
-    <!--&lt;!&ndash;<wait>true</wait>&ndash;&gt;-->
-    <!--<container>-->
-    <!--<containerId>jetty8x</containerId>-->
-    <!--<type>embedded</type>-->
-    <!--<systemProperties>-->
-    <!--&lt;!&ndash; <provPersistenceTarget>cargo</provPersistenceTarget> &ndash;&gt;-->
-    <!--</systemProperties>-->
-    <!--</container>-->
-    <!--<configuration>-->
-    <!--<properties>-->
-    <!--<cargo.servlet.port>8082</cargo.servlet.port>-->
-    <!--</properties>-->
-    <!--</configuration>-->
-    <!--</configuration>-->
-    <!--</plugin>-->
+            <!--<plugin>-->
+                <!--<groupId>org.codehaus.cargo</groupId>-->
+                <!--<artifactId>cargo-maven2-plugin</artifactId>-->
+                <!--<version>${cargo-maven2-plugin.version}</version>-->
+                <!--<configuration>-->
+                    <!--&lt;!&ndash;<wait>true</wait>&ndash;&gt;-->
+                    <!--<container>-->
+                        <!--<containerId>jetty8x</containerId>-->
+                        <!--<type>embedded</type>-->
+                        <!--<systemProperties>-->
+                            <!--&lt;!&ndash; <provPersistenceTarget>cargo</provPersistenceTarget> &ndash;&gt;-->
+                        <!--</systemProperties>-->
+                    <!--</container>-->
+                    <!--<configuration>-->
+                        <!--<properties>-->
+                            <!--<cargo.servlet.port>8082</cargo.servlet.port>-->
+                        <!--</properties>-->
+                    <!--</configuration>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
 
-    <!--</plugins>-->
+        <!--</plugins>-->
 
     <!--</build>-->
 
